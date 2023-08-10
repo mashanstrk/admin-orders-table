@@ -79,4 +79,22 @@ img {
   --start-btn: rgba(228, 157, 62, 1);
   --green-staus: rgba(83, 180, 95, 1);
   --red-status: rgba(204, 12, 0, 1);
+}
+
+.menu {
+  width: 280px;
+  height: 1080px;
+  background-color: var(--menu-bg);
+}
+.menu__nav {
+  margin-bottom: 1px;
+}
+.menu__nav__item {
+  width: 220px;
+  height: 64px;
+  border-radius: 10px;
+}
+
+.current {
+  background-color: var(--main-textcolor);
 }/*# sourceMappingURL=main.css.map */
