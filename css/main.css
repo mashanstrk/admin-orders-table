@@ -1,6 +1,6 @@
 body {
   background-color: var(--background-color);
-  font-family: Roboto, sans-serif;
+  font-family: "Futura", sans-serif;
   color: var(--main-textcolor);
   letter-spacing: 0.03em;
 }
@@ -67,18 +67,29 @@ img {
   margin: -1px;
 }
 
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/futura.ttf") format("truetype");
+}
 :root {
   --main-textcolor: rgba(76, 82, 114, 1);
   --secondary-textcolor: rgba(161, 165, 186, 1);
   --white: rgb(255, 255, 255);
   --active: rgba(67, 152, 211, 1);
-  --main-bg: rgba(225, 229, 240, 1);
+  --main-bg: rgb(225, 229, 240);
   --lines-color: rgba(214, 218, 230, 1);
   --menu-bg: rgba(101, 109, 139, 1);
   --menu-text: rgba(225, 229, 240, 1);
   --start-btn: rgba(228, 157, 62, 1);
   --green-staus: rgba(83, 180, 95, 1);
   --red-status: rgba(204, 12, 0, 1);
+}
+
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--main-bg);
 }
 
 .menu {
@@ -93,8 +104,31 @@ img {
   width: 220px;
   height: 64px;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+}
+.menu__nav__link {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.325px;
+  text-transform: uppercase;
+  color: var(--menu-text);
 }
 
 .current {
   background-color: var(--main-textcolor);
+}
+
+.orders__title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
 }/*# sourceMappingURL=main.css.map */
