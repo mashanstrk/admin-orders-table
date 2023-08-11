@@ -32,6 +32,8 @@
     letter-spacing: -0.32px;
     color: var(--secondary-textcolor);
     text-align: start;
+    padding: 16px 20px;
+    background-color: var(--white);
   }
 
   &__item {
@@ -41,6 +43,7 @@
     line-height: normal;
     letter-spacing: -0.32px;
     color: var(--main-textcolor);
+    padding: 16px 20px;
   }
 }
 
@@ -50,11 +53,6 @@
 
 .cancelled {
   color: var(--red-status);
-}
-
-th,
-td {
-  padding: 16px 20px;
 }
 
 .details__btn {
@@ -67,11 +65,15 @@ td {
   padding: 5px 15px;
   background-color: transparent;
   border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 .action__btn {
-  padding: 8px 39px;
-  width: 160px;
+  padding: 8px 9px;
+  width: 190px;
   border-radius: 10px;
   border: 2px solid var(--action-btn);
   color: var(--action-btn);
