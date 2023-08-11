@@ -24,6 +24,7 @@
     letter-spacing: 0.35px;
     text-transform: uppercase;
     color: var(--main-textcolor);
+    cursor: pointer;
   }
 
   &__options__fields {
@@ -47,6 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 
     &__box {
       display: flex;
@@ -71,11 +73,13 @@
       padding: 8px 16px;
       border-radius: 10px;
       background-color: var(--white);
-      border-color: transparent;
+      border: 3px solid var(--white);
+      cursor: pointer;
     }
 
     &__search:focus {
-      border-color: green;
+      border: 3px solid var(--active);
+      outline: none;
     }
   }
 }
@@ -140,6 +144,7 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  cursor: pointer;
 }
 
 .action__btn {
@@ -154,4 +159,44 @@
   line-height: normal;
   letter-spacing: 0.325px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+tr:hover td {
+  background-color: var(--main-bg);
+  cursor: pointer;
+}
+
+.pagination {
+  width: 100%;
+  height: 47px;
+
+  background-color: var(--white);
+  border-radius: 0px 0px 10px 10px;
+  padding: 12px 23px;
+
+  &__title {
+    color: var(--secondary-textcolor);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 112.5%;
+    margin-bottom: 0;
+  }
+
+  &__shown {
+    display: flex;
+    align-items: center;
+  }
+
+  &__page__quantity {
+    display: flex;
+    width: 62px;
+    height: 24px;
+    padding: 4px 5px;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--line-color);
+    background: var(--background, #f9f9f9);
+  }
 }
