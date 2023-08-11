@@ -1,10 +1,84 @@
 .orders {
+  padding: 40px;
 
-    &__title {
-        font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.5px;
-    }
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.5px;
+  }
+}
+
+.table__section {
+  height: 880px;
+  overflow: auto;
+  background-color: var(--white);
+  border-radius: 0px 10px 10px 10px;
+  box-shadow: 0px 3px 8px 0px rgba(76, 82, 114, 0.12);
+}
+
+.orders__table {
+  width: 100%;
+  table-layout: fixed;
+  min-width: 1000px;
+  border-collapse: collapse;
+
+  &__title {
+    position: sticky;
+    top: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    color: var(--secondary-textcolor);
+    text-align: start;
+  }
+
+  &__item {
+    border-bottom: 1px solid var(--lines-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    color: var(--main-textcolor);
+  }
+}
+
+.delivered {
+  color: var(--green-status);
+}
+
+.cancelled {
+  color: var(--red-status);
+}
+
+th,
+td {
+  padding: 16px 20px;
+}
+
+.details__btn {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.325px;
+  text-transform: uppercase;
+  color: var(--secondary-textcolor);
+  padding: 5px 15px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.action__btn {
+  padding: 8px 39px;
+  width: 160px;
+  border-radius: 10px;
+  border: 2px solid var(--action-btn);
+  color: var(--action-btn);
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.325px;
+  text-transform: uppercase;
 }
