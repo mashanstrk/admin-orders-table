@@ -61,38 +61,28 @@
 
         <section class="orders">
           <h2 class="orders__title">ORDERS</h2>
-          <button class="orders__all__btn">All</button>
-          <!-- <select
-            class="orders__filter"
-            name="orders-filter"
-            required="required"
-          >
-            <option class="orders__filter__option" value="">Filter</option>
-            <option value="1">Синий</option>
-            <option value="2">Зеленый</option>
-            <option value="3">Желтый</option>
-            <option value="4">Красный</option>
-            <option value="5">Оранжевый</option>
-            <option value="6">Черный</option>
-          </select> -->
-
-          <div class="orders__filter">
-            <div class="orders__filter__box">
-              <svg class="icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-filter"></use>
-              </svg>
-              <p class="orders__filter__option">Filter</p>
+          <div class="orders__btns__container">
+            <button class="orders__all__btn">All</button>
+            <div class="orders__options__fields">
+              <div class="orders__filter">
+                <div class="orders__filter__box">
+                  <svg class="icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-filter"></use>
+                  </svg>
+                  <p class="orders__filter__option">Filter</p>
+                </div>
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-chevron-down"></use>
+                </svg>
+              </div>
+              <input
+                class="orders__filter__search"
+                type="text"
+                name="search"
+                placeholder="Search"
+              />
             </div>
-            <svg class="icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-chevron-down"></use>
-            </svg>
           </div>
-          <input
-            class="orders__filter__search"
-            type="text"
-            name="search"
-            placeholder="Search"
-          />
 
           <!--Orders Table-->
 

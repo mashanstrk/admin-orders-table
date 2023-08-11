@@ -195,6 +195,7 @@ img {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.5px;
+  margin-bottom: 35px;
 }
 .orders__all__btn {
   width: 140px;
@@ -210,6 +211,23 @@ img {
   letter-spacing: 0.35px;
   text-transform: uppercase;
   color: var(--main-textcolor);
+}
+.orders__options__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.orders__btns__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .orders__filter {
   width: 284px;
@@ -248,6 +266,7 @@ img {
 }
 .orders__filter__search {
   width: 339px;
+  height: 36px;
   padding: 8px 16px;
   border-radius: 10px;
   background-color: var(--white);
