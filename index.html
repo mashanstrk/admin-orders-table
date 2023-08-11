@@ -19,34 +19,80 @@
         <!--Menu Section-->
 
         <section class="menu">
-          <ul class="menu__nav">
-            <li class="menu__nav__item current">
-              <a href="" class="menu__nav__link">Orders</a>
-            </li>
-            <li class="menu__nav__item">
-              <a href="" class="menu__nav__link">Accessories</a>
-            </li>
-            <li class="menu__nav__item">
-              <a href="" class="menu__nav__link">Aluminium</a>
-            </li>
-          </ul>
+          <div class="menu__container">
+            <div class="logo__img">
+              <img src="./images/logo.png" alt="logo" />
+            </div>
+            <ul class="menu__nav">
+              <li class="menu__nav__item current">
+                <svg class="contacts-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-clipboard"></use>
+                </svg>
+                <a href="" class="menu__nav__link">Orders</a>
+                <span class="menu__nav__quantity">45</span>
+              </li>
+              <li class="menu__nav__item">
+                <svg class="contacts-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-tool"></use>
+                </svg>
+                <a href="" class="menu__nav__link">Accessories</a>
+              </li>
+              <li class="menu__nav__item">
+                <svg class="contacts-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-frame"></use>
+                </svg>
+                <a href="" class="menu__nav__link">Aluminium</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__user">
+            <div class="menu__user__photo">
+              <img src="./images/user.jpg" alt="user photo" />
+            </div>
+            <p class="menu__user__name">MAX SMITH</p>
+            <svg class="menu__user__icon" width="32" height="32">
+              <use href="./images/icons.svg#icon-chevron-down"></use>
+            </svg>
+          </div>
         </section>
 
         <!--Orders Section-->
 
         <section class="orders">
           <h2 class="orders__title">ORDERS</h2>
-          <button>All</button>
-          <select name="orders-filter" required="required">
-            <option value="">Filter</option>
+          <button class="orders__all__btn">All</button>
+          <!-- <select
+            class="orders__filter"
+            name="orders-filter"
+            required="required"
+          >
+            <option class="orders__filter__option" value="">Filter</option>
             <option value="1">Синий</option>
             <option value="2">Зеленый</option>
             <option value="3">Желтый</option>
             <option value="4">Красный</option>
             <option value="5">Оранжевый</option>
             <option value="6">Черный</option>
-          </select>
-          <input type="text" name="search" placeholder="Search" />
+          </select> -->
+
+          <div class="orders__filter">
+            <div class="orders__filter__box">
+              <svg class="icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-filter"></use>
+              </svg>
+              <p class="orders__filter__option">Filter</p>
+            </div>
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-chevron-down"></use>
+            </svg>
+          </div>
+          <input
+            class="orders__filter__search"
+            type="text"
+            name="search"
+            placeholder="Search"
+          />
 
           <!--Orders Table-->
 

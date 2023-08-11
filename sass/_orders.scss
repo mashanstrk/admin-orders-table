@@ -1,11 +1,69 @@
 .orders {
   padding: 40px;
+  height: 100vh;
 
   &__title {
     font-size: 20px;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.5px;
+  }
+
+  &__all__btn {
+    width: 140px;
+    padding: 14px 20px;
+    width: 140px;
+    padding: 14px 20px;
+    border-radius: 10px 10px 0px 0px;
+    border-color: transparent;
+    background-color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+    color: var(--main-textcolor);
+  }
+
+  &__filter {
+    width: 284px;
+    height: 36px;
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__option {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      color: var(--main-textcolor);
+      margin-bottom: 0;
+    }
+
+    &__search {
+      width: 339px;
+      padding: 8px 16px;
+      border-radius: 10px;
+      background-color: var(--white);
+      border-color: transparent;
+    }
+
+    &__search:focus {
+      border-color: green;
+    }
   }
 }
 
