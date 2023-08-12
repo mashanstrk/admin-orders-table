@@ -209,6 +209,7 @@ img {
 .orders {
   padding: 40px;
   height: 100vh;
+  width: 100vh;
 }
 .orders__title {
   font-size: 20px;
@@ -251,6 +252,7 @@ img {
           justify-content: space-between;
 }
 .orders__filter {
+  position: relative;
   width: 284px;
   height: 36px;
   padding: 10px;
@@ -310,9 +312,7 @@ img {
 }
 
 .orders__table {
-  width: 100%;
   table-layout: fixed;
-  min-width: 1000px;
   border-collapse: collapse;
 }
 .orders__table__title {
@@ -527,4 +527,28 @@ tr:hover td {
   left: 16px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.filter__list {
+  width: 284px;
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+  background-color: var(--white);
+  border: 1px solid var(--active);
+  padding: 10px;
+  display: none;
+}
+
+.filter__item {
+  color: var(--main-textcolor);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  padding: 10px;
+}
+
+.filter__item:hover {
+  background-color: #a1a5ba;
 }/*# sourceMappingURL=main.css.map */

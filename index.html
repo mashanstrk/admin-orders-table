@@ -62,9 +62,9 @@
         <section class="orders">
           <h2 class="orders__title">ORDERS</h2>
           <div class="orders__btns__container">
-            <button class="orders__all__btn">All</button>
+            <button id="all" class="orders__all__btn">All</button>
             <div class="orders__options__fields">
-              <div class="orders__filter">
+              <div class="orders__filter" id="filterBox">
                 <div class="orders__filter__box">
                   <svg class="icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-filter"></use>
@@ -74,7 +74,15 @@
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-chevron-down"></use>
                 </svg>
+                <ul class="filter__list" id="filterList">
+                  <li id="processing" class="filter__item">Processing</li>
+                  <li id="ready" class="filter__item">Ready</li>
+                  <li id="intransit" class="filter__item">In transit</li>
+                  <li id="delivered" class="filter__item">Delivered</li>
+                  <li id="cancelled" class="filter__item">Cancelled</li>
+                </ul>
               </div>
+
               <div class="input-with-icon">
                 <svg class="icon__search" width="16" height="16">
                   <use href="./images/icons.svg#icon-magnifying"></use>
@@ -106,7 +114,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr data-category="processing">
                   <td class="orders__table__item">№ 0009450</td>
                   <td class="orders__table__item">12-05-2023, 08:22AM</td>
                   <td class="orders__table__item">133 pcs</td>
@@ -129,7 +137,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="processing">
                   <td class="orders__table__item">№ 0009449</td>
                   <td class="orders__table__item">12-05-2023, 07:04AM</td>
                   <td class="orders__table__item">205 pcs</td>
@@ -152,7 +160,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="processing">
                   <td class="orders__table__item">№ 0009448</td>
                   <td class="orders__table__item">12-05-2023, 07:02AM</td>
                   <td class="orders__table__item">10 pcs</td>
@@ -175,7 +183,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="ready">
                   <td class="orders__table__item">№ 0009447</td>
                   <td class="orders__table__item">12-05-2023, 06:22AM</td>
                   <td class="orders__table__item">25 pcs</td>
@@ -198,7 +206,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="intransit">
                   <td class="orders__table__item">№ 0009446</td>
                   <td class="orders__table__item">12-05-2023, 06:15AM</td>
                   <td class="orders__table__item">270 pcs</td>
@@ -221,7 +229,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="delivered">
                   <td class="orders__table__item">№ 0009445</td>
                   <td class="orders__table__item">12-05-2023, 01:51AM</td>
                   <td class="orders__table__item">11 pcs</td>
@@ -244,7 +252,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="delivered">
                   <td class="orders__table__item">№ 0009444</td>
                   <td class="orders__table__item">12-05-2023, 01:47AM</td>
                   <td class="orders__table__item">03 pcs</td>
@@ -267,7 +275,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="processing">
                   <td class="orders__table__item">№ 0009443</td>
                   <td class="orders__table__item">12-05-2023, 01:41AM</td>
                   <td class="orders__table__item">20 pcs</td>
@@ -290,7 +298,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="processing">
                   <td class="orders__table__item">№ 0009442</td>
                   <td class="orders__table__item">12-05-2023, 01:37AM</td>
                   <td class="orders__table__item">15 pcs</td>
@@ -313,7 +321,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="processing">
                   <td class="orders__table__item">№ 0009441</td>
                   <td class="orders__table__item">12-05-2023, 01:37AM</td>
                   <td class="orders__table__item">03 pcs</td>
@@ -336,7 +344,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="ready">
                   <td class="orders__table__item">№ 0009440</td>
                   <td class="orders__table__item">12-05-2023, 01:35AM</td>
                   <td class="orders__table__item">121 pcs</td>
@@ -359,7 +367,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="intransit">
                   <td class="orders__table__item">№ 0009439</td>
                   <td class="orders__table__item">12-05-2023, 01:20AM</td>
                   <td class="orders__table__item">45 pcs</td>
@@ -382,7 +390,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="cancelled">
                   <td class="orders__table__item">№ 0009438</td>
                   <td class="orders__table__item">12-05-2023, 01:19AM</td>
                   <td class="orders__table__item">76 pcs</td>
@@ -405,7 +413,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="delivered">
                   <td class="orders__table__item">№ 0009437</td>
                   <td class="orders__table__item">12-05-2023, 01:19AM</td>
                   <td class="orders__table__item">140 pcs</td>
@@ -428,7 +436,7 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
+                <tr data-category="ready">
                   <td class="orders__table__item">№ 0009436</td>
                   <td class="orders__table__item">12-05-2023, 01:15AM</td>
                   <td class="orders__table__item">140 pcs</td>
@@ -486,5 +494,7 @@
         </section>
       </div>
     </main>
+    <script src="./select.js"></script>
+    <script src="./filter.js"></script>
   </body>
 </html>

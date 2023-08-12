@@ -40,6 +40,7 @@
   }
 
   &__filter {
+    position: relative;
     width: 284px;
     height: 36px;
     padding: 10px;
@@ -96,7 +97,7 @@
 .orders__table {
   // width: 100%;
   table-layout: fixed;
-  // min-width: 1000px;
+  // max-width: 2000px;
   border-collapse: collapse;
 
   &__title {
@@ -274,4 +275,29 @@ tr:hover td {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+}
+
+.filter__list {
+  width: 284px;
+  position: absolute;
+  top: 40px;
+  z-index: 2;
+  background-color: var(--white);
+  border: 1px solid var(--active);
+  padding: 10px;
+  display: none;
+}
+
+.filter__item {
+  color: var(--main-textcolor);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  padding: 10px;
+}
+
+.filter__item:hover {
+  background-color: #a1a5ba;
 }
