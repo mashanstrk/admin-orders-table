@@ -289,7 +289,7 @@ img {
 .orders__filter__search {
   width: 339px;
   height: 36px;
-  padding: 8px 16px;
+  padding: 8px 16px 8px 48px;
   border-radius: 10px;
   background-color: var(--white);
   border: 3px solid var(--white);
@@ -394,6 +394,15 @@ tr:hover td {
   background-color: var(--white);
   border-radius: 0px 0px 10px 10px;
   padding: 12px 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .pagination__title {
   color: var(--secondary-textcolor);
@@ -426,4 +435,93 @@ tr:hover td {
   border-radius: 4px;
   border: 1px solid var(--line-color);
   background: var(--background, #f9f9f9);
+}
+.pagination__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.pagination__pages {
+  color: var(--secondary-textcolor);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 112.5%;
+}
+.pagination__number {
+  width: 24px;
+  height: 24px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--secondary-text, #a1a5ba);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 112.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pagination__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6px;
+}
+
+.icon__left {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  fill: var(--line-color);
+}
+
+.icon__right {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.current__page {
+  background-color: var(--active);
+  color: var(--white);
+}
+
+.icon__thumb {
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.icon__search {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }/*# sourceMappingURL=main.css.map */
