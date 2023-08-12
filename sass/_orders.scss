@@ -201,6 +201,7 @@ tr:hover td {
     border-radius: 4px;
     border: 1px solid var(--line-color);
     background: var(--background, #f9f9f9);
+    cursor: pointer;
   }
 
   &__right {
@@ -229,6 +230,7 @@ tr:hover td {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   &__btns {
@@ -259,6 +261,7 @@ tr:hover td {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .input-with-icon {
