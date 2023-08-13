@@ -25,6 +25,10 @@
     text-transform: uppercase;
     color: var(--main-textcolor);
     cursor: pointer;
+
+    @media (max-width: 1200px) {
+      width: 100px;
+    }
   }
 
   &__all__btn:hover {
@@ -56,6 +60,10 @@
     justify-content: space-between;
     cursor: pointer;
 
+    @media (max-width: 1200px) {
+      width: 150px;
+    }
+
     &__box {
       display: flex;
       align-items: center;
@@ -81,6 +89,10 @@
       background-color: var(--white);
       border: 3px solid var(--white);
       cursor: pointer;
+
+      @media (max-width: 1200px) {
+        width: 150px;
+      }
     }
 
     &__search:focus {
@@ -99,6 +111,7 @@
 }
 
 .orders__table {
+  width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
 
@@ -296,7 +309,7 @@ tr:hover td {
 }
 
 .filter__list {
-  width: 284px;
+  width: 100%;
   position: absolute;
   top: 40px;
   left: 0;

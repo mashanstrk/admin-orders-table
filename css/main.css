@@ -233,6 +233,11 @@ img {
   color: var(--main-textcolor);
   cursor: pointer;
 }
+@media (max-width: 1200px) {
+  .orders__all__btn {
+    width: 100px;
+  }
+}
 .orders__all__btn:hover {
   background-color: var(--lines-color);
   border: 1px solid var(--menu-bg);
@@ -272,6 +277,11 @@ img {
           justify-content: space-between;
   cursor: pointer;
 }
+@media (max-width: 1200px) {
+  .orders__filter {
+    width: 150px;
+  }
+}
 .orders__filter__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,6 +310,11 @@ img {
   border: 3px solid var(--white);
   cursor: pointer;
 }
+@media (max-width: 1200px) {
+  .orders__filter__search {
+    width: 150px;
+  }
+}
 .orders__filter__search:focus {
   border: 3px solid var(--active);
   outline: none;
@@ -315,6 +330,7 @@ img {
 }
 
 .orders__table {
+  width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
 }
@@ -548,7 +564,7 @@ tr:hover td {
 }
 
 .filter__list {
-  width: 284px;
+  width: 100%;
   position: absolute;
   top: 40px;
   left: 0;
