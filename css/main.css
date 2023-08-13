@@ -374,19 +374,31 @@ img {
   cursor: pointer;
 }
 
+.details__btn:hover,
+.details__btn:focus {
+  background-color: var(--menu-bg);
+}
+
 .action__btn {
   padding: 8px 9px;
   width: 190px;
   border-radius: 10px;
   border: 2px solid var(--action-btn);
   color: var(--action-btn);
-  background-color: transparent;
+  background-color: var(--white);
   font-size: 13px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.325px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.action__btn:hover,
+.action__btn:focus {
+  color: var(--white);
+  background-color: var(--action-btn);
+  border-color: var(--white);
 }
 
 tr:hover td {
