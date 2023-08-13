@@ -397,7 +397,7 @@ img {
 
 .action__btn {
   padding: 8px 9px;
-  width: 190px;
+  max-width: 190px;
   border-radius: 10px;
   border: 2px solid var(--action-btn);
   color: var(--action-btn);
@@ -408,6 +408,11 @@ img {
   letter-spacing: 0.325px;
   text-transform: uppercase;
   cursor: pointer;
+}
+@media (min-width: 1800px) {
+  .action__btn {
+    min-width: 190px;
+  }
 }
 
 .action__btn:hover,
