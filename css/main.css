@@ -233,6 +233,10 @@ img {
   color: var(--main-textcolor);
   cursor: pointer;
 }
+.orders__all__btn:hover {
+  background-color: var(--lines-color);
+  border: 1px solid var(--menu-bg);
+}
 .orders__options__fields {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +329,9 @@ img {
   text-align: start;
   padding: 16px 20px;
   background-color: var(--white);
+}
+.orders__table__head {
+  display: table-row !important;
 }
 .orders__table__item {
   border-bottom: 1px solid var(--lines-color);
@@ -532,6 +539,7 @@ tr:hover td {
   width: 284px;
   position: absolute;
   top: 40px;
+  left: 0;
   z-index: 2;
   background-color: var(--white);
   border: 1px solid var(--active);
