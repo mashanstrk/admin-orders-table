@@ -322,6 +322,7 @@ img {
 
 .table__section {
   height: 75vh;
+  width: 100%;
   overflow: auto;
   background-color: var(--white);
   border-radius: 0px 10px 10px 10px;
@@ -330,7 +331,6 @@ img {
 }
 
 .orders__table {
-  width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
 }
@@ -348,6 +348,7 @@ img {
 }
 .orders__table__head {
   display: table-row !important;
+  white-space: nowrap;
 }
 .orders__table__item {
   border-bottom: 1px solid var(--lines-color);

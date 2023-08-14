@@ -104,6 +104,7 @@
 
 .table__section {
   height: 75vh;
+  width: 100%;
   overflow: auto;
   background-color: var(--white);
   border-radius: 0px 10px 10px 10px;
@@ -111,7 +112,7 @@
 }
 
 .orders__table {
-  width: 100%;
+  // width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
 
@@ -130,6 +131,7 @@
 
   &__head {
     display: table-row !important;
+    white-space: nowrap;
   }
 
   &__item {
