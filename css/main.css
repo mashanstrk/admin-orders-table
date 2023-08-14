@@ -207,7 +207,7 @@ img {
 }
 
 .orders {
-  padding: 40px;
+  padding: 57px 40px 40px 40px;
   height: 100vh;
 }
 .orders__title {
@@ -321,7 +321,7 @@ img {
 }
 
 .table__section {
-  height: 880px;
+  height: 75vh;
   overflow: auto;
   background-color: var(--white);
   border-radius: 0px 10px 10px 10px;
@@ -356,7 +356,8 @@ img {
   line-height: normal;
   letter-spacing: -0.32px;
   color: var(--main-textcolor);
-  padding: 16px 20px;
+  padding: 15px 20px;
+  white-space: nowrap;
 }
 
 .delivered {
@@ -397,7 +398,7 @@ img {
 
 .action__btn {
   padding: 8px 9px;
-  max-width: 190px;
+  width: 190px;
   border-radius: 10px;
   border: 2px solid var(--action-btn);
   color: var(--action-btn);
@@ -408,11 +409,6 @@ img {
   letter-spacing: 0.325px;
   text-transform: uppercase;
   cursor: pointer;
-}
-@media (min-width: 1800px) {
-  .action__btn {
-    min-width: 190px;
-  }
 }
 
 .action__btn:hover,
