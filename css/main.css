@@ -210,6 +210,7 @@ img {
   padding: 57px 40px 40px 40px;
   height: 100vh;
   overflow: hidden;
+  width: 100%;
 }
 .orders__title {
   font-size: 20px;
@@ -332,8 +333,7 @@ img {
 }
 
 .orders__table {
-  table-layout: fixed;
-  border-collapse: collapse;
+  width: 100%;
 }
 .orders__table__title {
   position: sticky;
@@ -348,8 +348,9 @@ img {
   background-color: var(--white);
 }
 .orders__table__head {
-  display: table-row !important;
-  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .orders__table__item {
   border-bottom: 1px solid var(--lines-color);
@@ -360,6 +361,14 @@ img {
   color: var(--main-textcolor);
   padding: 5px 20px;
   white-space: nowrap;
+}
+.orders__table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .delivered {
