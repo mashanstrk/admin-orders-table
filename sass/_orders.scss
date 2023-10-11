@@ -115,8 +115,11 @@
 
 .orders__table {
   width: 100%;
+  display: table;
+  border-collapse: collapse;
 
   &__title {
+    display: table-cell;
     position: sticky;
     top: 0;
     font-size: 16px;
@@ -130,11 +133,10 @@
   }
 
   &__head {
-    display: flex;
+    display: table-row;
   }
 
   &__item {
-    border-bottom: 1px solid var(--lines-color);
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
@@ -142,11 +144,13 @@
     color: var(--main-textcolor);
     padding: 5px 20px;
     white-space: nowrap;
+    display: table-cell;
   }
 
   &__row {
-    display: flex;
+    display: table-row;
     align-items: center;
+    border-bottom: 1px solid var(--lines-color);
   }
 }
 

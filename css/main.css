@@ -334,8 +334,11 @@ img {
 
 .orders__table {
   width: 100%;
+  display: table;
+  border-collapse: collapse;
 }
 .orders__table__title {
+  display: table-cell;
   position: sticky;
   top: 0;
   font-size: 16px;
@@ -348,12 +351,9 @@ img {
   background-color: var(--white);
 }
 .orders__table__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: table-row;
 }
 .orders__table__item {
-  border-bottom: 1px solid var(--lines-color);
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
@@ -361,14 +361,14 @@ img {
   color: var(--main-textcolor);
   padding: 5px 20px;
   white-space: nowrap;
+  display: table-cell;
 }
 .orders__table__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: table-row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid var(--lines-color);
 }
 
 .delivered {
