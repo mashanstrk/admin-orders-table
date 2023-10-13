@@ -76,17 +76,137 @@
                 </svg>
                 <div class="filter__list" id="filterList">
                   <div class="filter__list__thumb">
-                    <div class="filter__list__point">
+                    <div class="filter__list__point filter__date">
                       Date
-                      <div>Start date</div>
-                      <div>
-                        <input class="date__input" type="text" />
-                        <button class="date__button"></button>
+                      <div class="filter__date__label">Start date</div>
+                      <div class="filter__date__picker">
+                        <input
+                          class="date__input"
+                          type="text"
+                          placeholder="MM/DD/YYYY"
+                        />
+                        <button class="date__button">
+                          <svg class="icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-calendar"></use>
+                          </svg>
+                          <svg class="icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="filter__date__label">End date</div>
+                      <div class="filter__date__picker">
+                        <input
+                          class="date__input"
+                          type="text"
+                          placeholder="MM/DD/YYYY"
+                        />
+                        <button class="date__button">
+                          <svg class="icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-calendar"></use>
+                          </svg>
+                          <svg class="icon" width="16" height="16">
+                            <use href="./images/icons.svg#icon-arrow"></use>
+                          </svg>
+                        </button>
                       </div>
                     </div>
-                    <div class="filter__list__point">Status</div>
-                    <div class="filter__list__point">Shipping Type</div>
+                    <div class="filter__list__point">
+                      Status
+                      <form class="fiter__form">
+                        <label for="option1">
+                          <input
+                            type="checkbox"
+                            id="option1"
+                            name="options"
+                            value="option1"
+                          />
+                          Processing
+                        </label>
+                        <label for="option2">
+                          <input
+                            type="checkbox"
+                            id="option2"
+                            name="options"
+                            value="option2"
+                          />
+                          Ready for Shipment
+                        </label>
+                        <label for="option3">
+                          <input
+                            type="checkbox"
+                            id="option3"
+                            name="options"
+                            value="option3"
+                          />
+                          In Transit
+                        </label>
+                        <label for="option4">
+                          <input
+                            type="checkbox"
+                            id="option4"
+                            name="options"
+                            value="option4"
+                          />
+                          Delivered
+                        </label>
+                        <label for="option5">
+                          <input
+                            type="checkbox"
+                            id="option5"
+                            name="options"
+                            value="option5"
+                          />
+                          Cancelled
+                        </label>
+                        <label for="option6">
+                          <input
+                            type="checkbox"
+                            id="option6"
+                            name="options"
+                            value="option6"
+                          />
+                          Returned
+                        </label>
+                      </form>
+                    </div>
+                    <div class="filter__list__point">
+                      Shipping Type
+                      <form class="fiter__form">
+                        <label for="option7">
+                          <input
+                            type="checkbox"
+                            id="option7"
+                            name="options"
+                            value="option7"
+                          />
+                          Free Shipping
+                        </label>
+                        <label for="option8">
+                          <input
+                            type="checkbox"
+                            id="option8"
+                            name="options"
+                            value="option8"
+                          />
+                          Priority Mail
+                        </label>
+                        <label for="option9">
+                          <input
+                            type="checkbox"
+                            id="option9"
+                            name="options"
+                            value="option9"
+                          />
+                          Priority Mail Express
+                        </label>
+                      </form>
+                    </div>
                     <div class="filter__list__point">Quantity</div>
+                    <div>
+                      <button class="aply__button" type="button">Apply</button>
+                      <button class="clear__button" type="reset">Clear</button>
+                    </div>
                   </div>
                 </div>
               </div>

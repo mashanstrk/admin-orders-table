@@ -21,5 +21,22 @@
 <symbol id="icon-magnifying" viewBox="0 0 32 32">
 <path fill="#4c5272" style="fill: var(--color1, #4c5272)" d="M30.134 27.2l-5.867-5.867c1.467-2.133 2.4-4.667 2.4-7.467 0-6.933-5.733-12.667-12.667-12.667s-12.667 5.733-12.667 12.667c0 6.933 5.733 12.667 12.667 12.667 2.8 0 5.333-0.933 7.467-2.4l5.867 5.867 2.8-2.8zM5.333 14c0-4.8 3.867-8.667 8.667-8.667s8.667 3.867 8.667 8.667c0 4.8-3.867 8.667-8.667 8.667s-8.667-3.867-8.667-8.667z"></path>
 </symbol>
+<symbol id="icon-calendar" viewBox="0 0 32 32">
+<path fill="#656d8b" style="fill: var(--color5, #656d8b)" d="M30.667 10.667v-5.333h-4v-4h-4v4h-13.333v-4h-4v4h-4v5.333h29.333zM30.667 30.667h-29.333v-17.333h29.333v17.333zM10.667 18.667h-4v4h4v-4z"></path>
+</symbol>
+<symbol id="icon-arrow" viewBox="0 0 32 32">
+<path fill="#5e5e5e" style="fill: var(--color5, #5e5e5e)" d="M24 10.666v5.067l-8 6.133-8-6.133v-5.067l8 6.133 8-6.133z"></path>
+</symbol>
+<symbol id="icon-checkboks" viewBox="0 0 30 32">
+<path fill="none" stroke="#d6dae6" style="stroke: var(--color1, #d6dae6)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.2632" d="M7.579 4h16.421c2.442 0 4.421 1.979 4.421 4.421v16.421c0 2.442-1.979 4.421-4.421 4.421h-16.421c-2.442 0-4.421-1.979-4.421-4.421v-16.421c0-2.442 1.979-4.421 4.421-4.421z"></path>
+</symbol>
+<symbol id="icon-picked-checkboks" viewBox="0 0 30 32">
+<path fill="#4398d3" style="fill: var(--color2, #4398d3)" d="M6.316 3.368c-2.093 0-3.789 1.697-3.789 3.789v18.947c0 2.093 1.697 3.789 3.789 3.789h18.947c2.093 0 3.789-1.697 3.789-3.789v-18.947c0-2.093-1.697-3.789-3.789-3.789h-18.947zM13.8 23.396l-7.427-7.427 2.785-2.785 4.509 4.509 8.488-8.488 2.785 2.785-11.141 11.406z"></path>
+</symbol>
+<symbol id="icon-info" viewBox="0 0 30 32">
+<path fill="#d6dae6" style="fill: var(--color1, #d6dae6); stroke: var(--color1, #d6dae6)" stroke="#d6dae6" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0476" d="M15.238 28.699c7.013 0 12.698-5.685 12.698-12.698s-5.685-12.698-12.698-12.698-12.698 5.685-12.698 12.698c0 7.013 5.685 12.698 12.698 12.698z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0476" d="M15.238 21.079v-5.079"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.0476" d="M15.238 10.921h0.013"></path>
+</symbol>
 </defs>
 </svg>
