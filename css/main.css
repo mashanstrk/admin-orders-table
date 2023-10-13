@@ -429,7 +429,7 @@ img {
   border-color: var(--white);
 }
 
-tr:hover td {
+.orders__table__row:hover {
   background-color: var(--main-bg);
   cursor: pointer;
 }
