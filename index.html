@@ -74,13 +74,21 @@
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-chevron-down"></use>
                 </svg>
-                <ul class="filter__list" id="filterList">
-                  <li id="processing" class="filter__item">Processing</li>
-                  <li id="ready" class="filter__item">Ready</li>
-                  <li id="intransit" class="filter__item">In transit</li>
-                  <li id="delivered" class="filter__item">Delivered</li>
-                  <li id="cancelled" class="filter__item">Cancelled</li>
-                </ul>
+                <div class="filter__list" id="filterList">
+                  <div class="filter__list__thumb">
+                    <div class="filter__list__point">
+                      Date
+                      <div>Start date</div>
+                      <div>
+                        <input class="date__input" type="text" />
+                        <button class="date__button"></button>
+                      </div>
+                    </div>
+                    <div class="filter__list__point">Status</div>
+                    <div class="filter__list__point">Shipping Type</div>
+                    <div class="filter__list__point">Quantity</div>
+                  </div>
+                </div>
               </div>
 
               <div class="input-with-icon">
