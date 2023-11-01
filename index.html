@@ -64,167 +64,167 @@
           <div class="orders__btns__container">
             <button id="all" class="orders__all__btn">All</button>
             <div class="orders__options__fields">
-              <div class="orders__filter" id="filterBox">
+              <div class="orders__filter" id="filterBtn">
                 <div class="orders__filter__box">
                   <svg class="icon" width="16" height="16">
                     <use href="./images/icons.svg#icon-filter"></use>
                   </svg>
                   <p class="orders__filter__option">Filter</p>
                 </div>
-                <svg class="icon" width="24" height="24">
+                <svg class="icon" width="24" height="24" id="iconFilter">
                   <use href="./images/icons.svg#icon-chevron-down"></use>
                 </svg>
-                <div class="filter__list" id="filterList">
-                  <div class="filter__list__thumb">
-                    <div class="filter__list__point filter__date">
-                      Date
-                      <div class="filter__date__label">Start date</div>
-                      <div class="filter__date__picker">
+              </div>
+              <div class="filter__list inactive" id="filterList">
+                <div class="filter__list__thumb">
+                  <div class="filter__list__point filter__date">
+                    Date
+                    <div class="filter__date__label">Start date</div>
+                    <div class="filter__date__picker">
+                      <input
+                        class="date__input"
+                        type="text"
+                        placeholder="MM/DD/YYYY"
+                      />
+                      <button class="date__button">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-calendar"></use>
+                        </svg>
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="filter__date__label">End date</div>
+                    <div class="filter__date__picker">
+                      <input
+                        class="date__input"
+                        type="text"
+                        placeholder="MM/DD/YYYY"
+                      />
+                      <button class="date__button">
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-calendar"></use>
+                        </svg>
+                        <svg class="icon" width="16" height="16">
+                          <use href="./images/icons.svg#icon-arrow"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="filter__list__point">
+                    Status
+                    <form class="fiter__form">
+                      <label for="option1">
                         <input
-                          class="date__input"
-                          type="text"
-                          placeholder="MM/DD/YYYY"
+                          type="checkbox"
+                          id="option1"
+                          name="options"
+                          value="option1"
                         />
-                        <button class="date__button">
-                          <svg class="icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-calendar"></use>
-                          </svg>
-                          <svg class="icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-arrow"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <div class="filter__date__label">End date</div>
-                      <div class="filter__date__picker">
+                        Processing
+                      </label>
+                      <label for="option2">
                         <input
-                          class="date__input"
-                          type="text"
-                          placeholder="MM/DD/YYYY"
+                          type="checkbox"
+                          id="option2"
+                          name="options"
+                          value="option2"
                         />
-                        <button class="date__button">
-                          <svg class="icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-calendar"></use>
-                          </svg>
-                          <svg class="icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-arrow"></use>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="filter__list__point">
-                      Status
-                      <form class="fiter__form">
-                        <label for="option1">
-                          <input
-                            type="checkbox"
-                            id="option1"
-                            name="options"
-                            value="option1"
-                          />
-                          Processing
-                        </label>
-                        <label for="option2">
-                          <input
-                            type="checkbox"
-                            id="option2"
-                            name="options"
-                            value="option2"
-                          />
-                          Ready for Shipment
-                        </label>
-                        <label for="option3">
-                          <input
-                            type="checkbox"
-                            id="option3"
-                            name="options"
-                            value="option3"
-                          />
-                          In Transit
-                        </label>
-                        <label for="option4">
-                          <input
-                            type="checkbox"
-                            id="option4"
-                            name="options"
-                            value="option4"
-                          />
-                          Delivered
-                        </label>
-                        <label for="option5">
-                          <input
-                            type="checkbox"
-                            id="option5"
-                            name="options"
-                            value="option5"
-                          />
-                          Cancelled
-                        </label>
-                        <label for="option6">
-                          <input
-                            type="checkbox"
-                            id="option6"
-                            name="options"
-                            value="option6"
-                          />
-                          Returned
-                        </label>
-                      </form>
-                    </div>
-                    <div class="filter__list__point">
-                      Shipping Type
-                      <form class="fiter__form">
-                        <label for="option7">
-                          <input
-                            type="checkbox"
-                            id="option7"
-                            name="options"
-                            value="option7"
-                          />
-                          Free Shipping
-                        </label>
-                        <label for="option8">
-                          <input
-                            type="checkbox"
-                            id="option8"
-                            name="options"
-                            value="option8"
-                          />
-                          Priority Mail
-                        </label>
-                        <label for="option9">
-                          <input
-                            type="checkbox"
-                            id="option9"
-                            name="options"
-                            value="option9"
-                          />
-                          Priority Mail Express
-                        </label>
-                      </form>
-                    </div>
-                    <div class="filter__list__point">
-                      Quantity
-                      <svg class="icon__info" width="20" height="20">
-                        <use href="./images/icons.svg#icon-info"></use>
-                      </svg>
-                      <div class="quantity__input__thumb">
+                        Ready for Shipment
+                      </label>
+                      <label for="option3">
                         <input
-                          class="quantity__input"
-                          type="text"
-                          placeholder="From"
+                          type="checkbox"
+                          id="option3"
+                          name="options"
+                          value="option3"
                         />
-                        <div class="line"></div>
+                        In Transit
+                      </label>
+                      <label for="option4">
                         <input
-                          class="quantity__input"
-                          type="text"
-                          placeholder="till"
+                          type="checkbox"
+                          id="option4"
+                          name="options"
+                          value="option4"
                         />
-                      </div>
+                        Delivered
+                      </label>
+                      <label for="option5">
+                        <input
+                          type="checkbox"
+                          id="option5"
+                          name="options"
+                          value="option5"
+                        />
+                        Cancelled
+                      </label>
+                      <label for="option6">
+                        <input
+                          type="checkbox"
+                          id="option6"
+                          name="options"
+                          value="option6"
+                        />
+                        Returned
+                      </label>
+                    </form>
+                  </div>
+                  <div class="filter__list__point">
+                    Shipping Type
+                    <form class="fiter__form">
+                      <label for="option7">
+                        <input
+                          type="checkbox"
+                          id="option7"
+                          name="options"
+                          value="option7"
+                        />
+                        Free Shipping
+                      </label>
+                      <label for="option8">
+                        <input
+                          type="checkbox"
+                          id="option8"
+                          name="options"
+                          value="option8"
+                        />
+                        Priority Mail
+                      </label>
+                      <label for="option9">
+                        <input
+                          type="checkbox"
+                          id="option9"
+                          name="options"
+                          value="option9"
+                        />
+                        Priority Mail Express
+                      </label>
+                    </form>
+                  </div>
+                  <div class="filter__list__point">
+                    Quantity
+                    <svg class="icon__info" width="20" height="20">
+                      <use href="./images/icons.svg#icon-info"></use>
+                    </svg>
+                    <div class="quantity__input__thumb">
+                      <input
+                        class="quantity__input"
+                        type="text"
+                        placeholder="From"
+                      />
+                      <div class="line"></div>
+                      <input
+                        class="quantity__input"
+                        type="text"
+                        placeholder="till"
+                      />
                     </div>
-                    <div>
-                      <button class="aply__button" type="button">Apply</button>
-                      <button class="clear__button" type="reset">Clear</button>
-                    </div>
+                  </div>
+                  <div>
+                    <button class="aply__button" type="button">Apply</button>
+                    <button class="clear__button" type="reset">Clear</button>
                   </div>
                 </div>
               </div>
@@ -271,7 +271,8 @@
                 <div class="orders__table__item">
                   <button type="button" class="details__btn">
                     DETAILS
-                    <svg class="contacts-icon" width="32" height="32">
+
+                    <svg class="contacts-icon" width="24" height="24">
                       <use href="./images/icons.svg#icon-chevron-down"></use>
                     </svg>
                   </button>
@@ -639,7 +640,7 @@
       </div>
     </main>
     <script src="./select.js"></script>
-    <script src="./filter.js"></script>
     <script src="./search.js"></script>
+    <script src="./input.js"></script>
   </body>
 </html>
