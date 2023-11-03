@@ -505,3 +505,31 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+.visuallyhidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset (50%);
+  margin: -1px;
+}
+
+.visuallyhidden:checked + .checkbox {
+  background-image: url(../images/filled.svg);
+  background-size: contain;
+  stroke: transparent;
+
+  background-origin: content-box;
+  border-radius: 2px;
+}
+
+.checkbox__field {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}

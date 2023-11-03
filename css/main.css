@@ -851,4 +851,36 @@ img {
   letter-spacing: 0.35px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.visuallyhidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset 50%;
+          clip-path: inset 50%;
+  margin: -1px;
+}
+
+.visuallyhidden:checked + .checkbox {
+  background-image: url(../images/filled.svg);
+  background-size: contain;
+  stroke: transparent;
+  background-origin: content-box;
+  border-radius: 2px;
+}
+
+.checkbox__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
 }/*# sourceMappingURL=main.css.map */
