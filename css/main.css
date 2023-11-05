@@ -415,6 +415,11 @@ img {
   color: var(--active);
 }
 
+.details__btn:hover .details-icon,
+.details__btn:focus .details-icon {
+  stroke: #4398d3;
+}
+
 .action__btn {
   padding: 8px 9px;
   width: 190px;
@@ -819,10 +824,11 @@ img {
   background-color: #656d8b;
 }
 
-.aply__button {
+.apply__button {
   border-radius: 10px;
   background-color: #2583c6;
   border: 2px solid #2583c6;
+  opacity: 0.6;
   height: 40px;
   width: 253px;
   padding: 8px 39px;
@@ -834,6 +840,12 @@ img {
   letter-spacing: 0.35px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.apply__button:hover,
+.apply__button:focus {
+  background-color: #2583c6;
+  opacity: 1;
 }
 
 .clear__button {
@@ -867,6 +879,13 @@ img {
   margin: -1px;
 }
 
+.checkbox {
+  fill: transparent;
+  stroke: #d6dae6;
+  width: 18px;
+  height: 18px;
+}
+
 .visuallyhidden:checked + .checkbox {
   background-image: url(../images/filled.svg);
   background-size: contain;
@@ -883,4 +902,32 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 7px;
+}
+
+.details-icon {
+  fill: transparent;
+  stroke: #a1a5ba;
+  width: 24px;
+  height: 24px;
+}
+
+.icon__left,
+.icon__right {
+  fill: transparent;
+  stroke: #a1a5ba;
+  width: 17px;
+  height: 17px;
+}
+
+.icon-down {
+  fill: transparent;
+  stroke: #a1a5ba;
+  width: 20px;
+  height: 20px;
+}
+
+.icon__left:disabled,
+.icon__right:disabled {
+  stroke: #e7e9ed;
+  fill: transparent;
 }/*# sourceMappingURL=main.css.map */
