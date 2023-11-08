@@ -247,13 +247,13 @@
                     <div class="quantity__input__thumb">
                       <input
                         class="quantity__input"
-                        type="text"
+                        type="float"
                         placeholder="From"
                       />
                       <div class="line"></div>
                       <input
                         class="quantity__input"
-                        type="text"
+                        type="float"
                         placeholder="till"
                       />
                     </div>
@@ -646,11 +646,23 @@
           <div class="pagination">
             <div class="pagination__shown">
               <p class="pagination__title">Shown per page:</p>
-              <div class="pagination__page__quantity">
+              <div
+                class="pagination__page__quantity"
+                id="paginationPageQuantity"
+              >
                 20
                 <svg class="icon-down">
                   <use href="./images/icons.svg#icon-chevron-down"></use>
                 </svg>
+                <div
+                  id="paginationList"
+                  class="inactive-pagination pagination__list"
+                >
+                  <div class="pagination__item">10</div>
+                  <div class="pagination__item">20</div>
+                  <div class="pagination__item">50</div>
+                  <div class="pagination__item">100</div>
+                </div>
               </div>
             </div>
 
@@ -678,5 +690,6 @@
     <script src="./select.js"></script>
     <script src="./search.js"></script>
     <script src="./input.js"></script>
+    <script src="./pagination.js"></script>
   </body>
 </html>
