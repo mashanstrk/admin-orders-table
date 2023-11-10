@@ -609,3 +609,109 @@
   stroke: #e7e9ed;
   fill: transparent;
 }
+
+.orders__list {
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.active-ordersList {
+  display: block;
+}
+
+.inactive-ordersList {
+  display: none;
+}
+
+.order__list__title {
+  color: #a1a5ba;
+
+  font-family: Futura;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+}
+
+.order__list__thumb {
+  width: 100%;
+  border-radius: 10px;
+  background: #f4f5fb;
+  padding: 5px 11px 5px 19px;
+  display: table;
+  border-collapse: collapse;
+}
+
+.order__item__title {
+  color: #a1a5ba;
+
+  font-family: Futura;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+}
+
+.order__item__thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.order__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #d6dae6;
+}
+
+.order__item__icon {
+  display: flex;
+}
+
+.order__item__part-number {
+  color: #4398d3;
+
+  font-family: Futura;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+}
+
+.order__item-field {
+  color: #4c5272;
+
+  font-family: Futura;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+}
+
+.item__sequence-number {
+  color: #4c5272;
+  font-family: Futura;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.order__item__img {
+  margin-right: 14px;
+}
+
+.order__item__total {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.order__item__total__thumb {
+  padding: 14px 0;
+}
+
+.order__item__row {
+  display: table-row;
+}
+
+.order__item__cell {
+  display: table-cell;
+}
