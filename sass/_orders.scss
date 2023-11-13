@@ -109,21 +109,22 @@
 .orders__filter:hover {
   border-color: var(--active);
 }
+
 .table__section {
   height: 75vh;
   width: 100%;
   overflow: auto;
+  padding: 0 20px 18px 20px;
   background-color: var(--white);
   box-shadow: 0px 3px 8px 0px rgba(76, 82, 114, 0.12);
 }
 
 .orders__table {
   width: 100%;
-  display: table;
-  border-collapse: collapse;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr 3fr 2fr 1fr 1fr 2fr;
 
   &__title {
-    display: table-cell;
     position: sticky;
     top: 0;
     font-size: 16px;
@@ -132,28 +133,21 @@
     letter-spacing: -0.32px;
     color: var(--secondary-textcolor);
     text-align: start;
-    padding: 16px 20px;
+    padding: 18px 5px 0 5px;
+
     background-color: var(--white);
   }
 
-  &__head {
-    display: table-row;
-  }
-
   &__item {
+    display: flex;
+    align-items: center;
     font-size: 16px;
     font-weight: 500;
     line-height: normal;
     letter-spacing: -0.32px;
     color: var(--main-textcolor);
-    padding: 11px 20px;
+    padding: 10.5px 5px;
     white-space: nowrap;
-    display: table-cell;
-  }
-
-  &__row {
-    display: table-row;
-    align-items: center;
     border-bottom: 1px solid var(--lines-color);
   }
 }
@@ -612,7 +606,8 @@
 
 .orders__list {
   width: 100%;
-  padding: 15px 20px;
+  padding: 15px 0px;
+  grid-column: span 8;
 }
 
 .active-ordersList {
@@ -637,8 +632,12 @@
   border-radius: 10px;
   background: #f4f5fb;
   padding: 5px 11px 5px 19px;
-  display: table;
-  border-collapse: collapse;
+}
+
+.order__list__table {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 4fr 1fr 1fr;
 }
 
 .order__item__title {
@@ -654,17 +653,20 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding: 15px 5px;
+  border-bottom: 1px solid #d6dae6;
 }
 
-.order__item {
+.order__item__number__thumb {
   display: flex;
-  justify-content: space-between;
-  padding: 15px 0;
-  border-bottom: 1px solid #d6dae6;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .order__item__icon {
   display: flex;
+  padding: 15px 0px;
+  border-bottom: 1px solid #d6dae6;
 }
 
 .order__item__part-number {
@@ -702,16 +704,23 @@
   flex-direction: column;
   gap: 5px;
   align-items: flex-end;
+  padding: 15px 0px;
+  border-bottom: 1px solid #d6dae6;
 }
 
 .order__item__total__thumb {
   padding: 14px 0;
+  grid-column: span 6;
 }
 
 .order__item__row {
   display: table-row;
 }
 
-.order__item__cell {
-  display: table-cell;
+.order__item__total-price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+  padding: 15px 0px;
 }
