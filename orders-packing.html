@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders table</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main__container">
+        <!--Menu Section-->
+
+        <section class="menu">
+          <div class="menu__container">
+            <div class="logo__img">
+              <img src="./images/logo.png" alt="logo" />
+            </div>
+            <ul class="menu__nav">
+              <li class="menu__nav__item current">
+                <svg class="contacts-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-clipboard"></use>
+                </svg>
+                <a href="" class="menu__nav__link">Orders</a>
+                <span class="menu__nav__quantity">45</span>
+              </li>
+              <li class="menu__nav__item">
+                <svg class="contacts-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-tool"></use>
+                </svg>
+                <a href="" class="menu__nav__link">Accessories</a>
+              </li>
+              <li class="menu__nav__item">
+                <svg class="contacts-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-frame"></use>
+                </svg>
+                <a href="" class="menu__nav__link">Aluminium</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu__user">
+            <div class="menu__user__photo">
+              <img src="./images/user.jpg" alt="user photo" />
+            </div>
+            <p class="menu__user__name">MAX SMITH</p>
+            <svg class="menu__user__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-more_vert"></use>
+            </svg>
+          </div>
+        </section>
+
+        <!--Orders Section-->
+
+        <section class="orders">
+          <h2 class="orders__packing__title">
+            Orders/<span class="title__category">Packing</span>
+          </h2>
+          <div class="orders__btns__container">
+            <div>
+              <button type="button" class="orders__all__btn">Line Items</button>
+              <button type="button" class="shipping__btn">SHIPPING</button>
+            </div>
+            <div class="orders__options__fields">
+              <div class="input-with-icon">
+                <svg class="icon__search" width="16" height="16">
+                  <use href="./images/icons.svg#icon-magnifying"></use>
+                </svg>
+                <input
+                  class="orders__filter__search"
+                  type="text"
+                  name="search"
+                  placeholder="Search"
+                  id="searchInput"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!--Orders packing Table-->
+
+          <div class="packing__table__section">
+            <div class="packing__table" id="dataTable">
+              <div class="packing__item__icon">
+                <input type="checkbox" class="visuallyhidden" />
+                <svg class="packing__checkbox">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+                <img
+                  class="packing__item__img"
+                  src="./images/orderItem.png"
+                  alt=""
+                />
+                <div class="order__item__number__thumb">
+                  <span class="order__item__title">Part Number</span
+                  ><span class="order__item__part-number">8950909</span>
+                </div>
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Total Quantity</span
+                ><span class="order__item-field">33 pcs</span>
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Chosen Quantity </span>
+                <input class="chosen__quantity" value="33" type="text" />
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Description</span
+                ><span class="order__item-field"
+                  >Window handle, rotating screw, 7 mm x 30 mm, aluminum
+                  shell</span
+                >
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Shipping Type</span
+                ><span class="order__item-field">Priority Mail</span>
+              </div>
+              <div class="packing__item__total">
+                <span class="order__item__title">Price Total</span
+                ><span class="order__item-field">608,52 USD</span>
+              </div>
+
+              <div class="packing__item__thumb">
+                <button type="button" class="action__btn" id="splitBtn">
+                  Split
+                </button>
+              </div>
+
+              <div class="packing__item__icon">
+                <input type="checkbox" class="visuallyhidden" />
+                <svg class="packing__checkbox">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+                <img
+                  class="packing__item__img"
+                  src="./images/orderItem.png"
+                  alt=""
+                />
+                <div class="order__item__number__thumb">
+                  <span class="order__item__title">Part Number</span
+                  ><span class="order__item__part-number">9559091</span>
+                </div>
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Total Quantity</span
+                ><span class="order__item-field">10 pcs</span>
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Chosen Quantity</span>
+                <input class="chosen__quantity" value="10" type="text" />
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Description</span
+                ><span class="order__item-field"
+                  >Window handle, rotating screw, 10 mm x 40 mm, aluminum
+                  shell</span
+                >
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Shipping Type</span
+                ><span class="order__item-field">Priority Mail</span>
+              </div>
+              <div class="packing__item__total">
+                <span class="order__item__title">Price Total</span
+                ><span class="order__item-field">102 USD</span>
+              </div>
+              <div class="packing__item__thumb">
+                <button type="button" class="action__btn">Split</button>
+              </div>
+
+              <div class="packing__item__icon">
+                <input type="checkbox" class="visuallyhidden" />
+                <svg class="packing__checkbox">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+                <img
+                  class="packing__item__img"
+                  src="./images/orderItem.png"
+                  alt=""
+                />
+                <div class="order__item__number__thumb">
+                  <span class="order__item__title">Part Number</span
+                  ><span class="order__item__part-number">1872667</span>
+                </div>
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Total Quantity</span
+                ><span class="order__item-field">70 pcs</span>
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Chosen Quantity </span>
+                <input class="chosen__quantity" value="50" type="text" />
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Description</span
+                ><span class="order__item-field"
+                  >ASSEMBLY SCREW @ INTERLOCK POKET ADAPTOR</span
+                >
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Shipping Type</span
+                ><span class="order__item-field">Priority Mail</span>
+              </div>
+              <div class="packing__item__total">
+                <span class="order__item__title">Price Total</span
+                ><span class="order__item-field">28 USD</span>
+              </div>
+              <div class="packing__item__thumb">
+                <button type="button" class="action__btn">Split</button>
+              </div>
+
+              <div class="packing__item__icon">
+                <input type="checkbox" class="visuallyhidden" />
+                <svg class="packing__checkbox">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+                <img
+                  class="packing__item__img"
+                  src="./images/orderItem.png"
+                  alt=""
+                />
+                <div class="order__item__number__thumb">
+                  <span class="order__item__title">Part Number</span
+                  ><span class="order__item__part-number">2377889</span>
+                </div>
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Total Quantity</span
+                ><span class="order__item-field">20 pcs</span>
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Chosen Quantity </span>
+                <input class="chosen__quantity" value="20" type="text" />
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Description</span
+                ><span class="order__item-field"
+                  >Window handle, rotating screw, 6,5 mm x 20 mm, aluminum
+                  shell</span
+                >
+              </div>
+              <div class="packing__item__thumb">
+                <span class="order__item__title">Shipping Type</span
+                ><span class="order__item-field">Priority Mail</span>
+              </div>
+              <div class="packing__item__total">
+                <span class="order__item__title">Price Total</span
+                ><span class="order__item-field">204 USD</span>
+              </div>
+              <div class="packing__item__thumb">
+                <button type="button" class="action__btn">Split</button>
+              </div>
+            </div>
+            <div class="packing__buttons">
+              <button class="cancel-selection" type="button">
+                Cancel selection
+              </button>
+              <button class="confirm-packages" type="submit">
+                Confirm Packages
+              </button>
+            </div>
+          </div>
+
+          <div id="modal" class="backdrop is-hidden">
+            <div class="modal__window">
+              <div class="modal__title__thumb">
+                <span class="modal__title">How many packages do you want?</span>
+                <svg class="icon__close" data-modal-close>
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+              </div>
+              <p class="modal__text">
+                Chosen quantity of parts will be divided evenly according to the
+                selected number of packages.
+              </p>
+              <p class="modal__label">Select</p>
+              <div class="test">
+                <input class="modal__input" type="float" value="3" />
+                <div class="quantity__icons">
+                  <svg class="icon__up" data-modal-close>
+                    <use href="./images/icons.svg#icon-chevron-down"></use>
+                  </svg>
+                  <svg class="icon__down" data-modal-close>
+                    <use href="./images/icons.svg#icon-chevron-down"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="modal__buttons">
+                <button class="cancel__btn" data-modal-close>Cancel</button
+                ><button class="confirm__btn">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./select.js"></script>
+    <script src="./search.js"></script>
+    <script src="./input.js"></script>
+    <script src="./pagination.js"></script>
+    <script src="./details.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>
