@@ -411,7 +411,11 @@
               <button class="cancel-selection" type="button">
                 Cancel selection
               </button>
-              <button class="confirm-packages" type="submit">
+              <button
+                class="confirm-packages"
+                type="submit"
+                id="confirmPackages"
+              >
                 Confirm Packages
               </button>
             </div>
@@ -430,7 +434,7 @@
                 selected number of packages.
               </p>
               <p class="modal__label">Select</p>
-              <div class="test">
+              <div class="modal__input__thumb">
                 <input class="modal__input" type="float" value="3" />
                 <div class="quantity__icons">
                   <svg class="icon__up" data-modal-close>
@@ -448,6 +452,294 @@
               </div>
             </div>
           </div>
+
+          <!-- Confirm modal -->
+
+          <div class="backdrop is-hidden" id="modalPacking">
+            <div class="confirm__modal">
+              <div class="confirm__modal__title-thumb">
+                <span class="confirm__modal__title">Packing order № 0009450</span>
+                <svg class="icon__close" data-packing-close>
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+                </div>
+                <div class="confirm__modal__nav">
+                  <div id="firstStepBtn" class="confirm__modal__nav-item confirm__modal__nav-current"><span class="confirm__modal__nav__title confirm__modal__nav__title-curent">confirm Packages</span></div>
+                  <div id="secondStepBtn" class="confirm__modal__nav-item">
+                    <span class="confirm__modal__nav__title">place Sticker</span>
+                    <span class="confirm__modal__nav__title">Step 1/2</span>
+                  </div>
+                </div>
+                <div class="modal__first-step" id="firstStepThumb">
+                <span class="modal__packing__table__title">Line Items</span>
+                <div class="modal__packing__table" >
+                  <div class="packing__item__icon">
+                    <img
+                      class="packing__item__img"
+                      src="./images/orderItem.png"
+                      alt=""
+                    />
+                    <div class="order__item__number__thumb">
+                      <span class="modal__order__item__title">Part Number</span
+                      ><span class="modal__order__item-field">8950909</span>
+                    </div>
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Total Quantity</span>
+                    <input class="modal__chosen__quantity" value="33" type="text" />
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Description</span
+                    ><span class="modal__order__item-field"
+                      >Window handle, rotating screw, 7 mm x 30 mm, aluminum
+                      shell</span
+                    >
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Shipping Type</span
+                    ><span class="modal__order__item-field">Priority Mail</span>
+                  </div>
+                  <div class="modal__packing__item__total">
+                    <span class="modal__order__item__title">Price Total</span
+                    ><span class="modal__order__item-field">608,52 USD</span>
+                  </div>
+
+                  <div class="devided__packing__list-modal">
+                    <div class="devided-packing__thumb">
+                      <div class="devided-packing__table__modal">
+                        <div class="order__item__icon">
+                          <span class="item__sequence-number">1.</span>
+                          <img
+                            class="devided__item__img"
+                            src="./images/orderItem.png"
+                            alt=""
+                          />
+                          <div class="order__item__number__thumb">
+                            <span class="order__item__title">Part Number</span
+                            ><span class="order__item__part-number"
+                              >8950909</span
+                            >
+                          </div>
+                        </div>
+                        <div class="order__item__thumb">
+                          <span class="order__item__title"
+                            >Chosen Quantity</span
+                          >
+                          <div class="chosen__quantity__input">
+                            <input
+                              class="devided__chosen__quantity"
+                              value="11"
+                              type="text"
+                            />
+                            <svg class="icon-complete">
+                              <use
+                                href="./images/icons.svg#icon-complete"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="order__item__thumb">
+                          <span class="order__item__title">Price per 1pcs</span
+                          ><span class="order__item-field">18,44 USD</span>
+                        </div>
+                        <div class="order__item__total">
+                          <span class="order__item__title">Price Total</span
+                          ><span class="order__item-field">202,84 USD</span>
+                        </div>
+
+                        <div class="order__item__icon">
+                          <span class="item__sequence-number">2.</span>
+                          <img
+                            class="devided__item__img"
+                            src="./images/orderItem.png"
+                            alt=""
+                          />
+                          <div class="order__item__number__thumb">
+                            <span class="order__item__title">Part Number</span
+                            ><span class="order__item__part-number"
+                              >9559091</span
+                            >
+                          </div>
+                        </div>
+                        <div class="order__item__thumb">
+                          <span class="order__item__title"
+                            >Chosen Quantity</span
+                          >
+                          <div class="chosen__quantity__input">
+                            <input
+                              class="devided__chosen__quantity"
+                              value="11"
+                              type="text"
+                            />
+                            <svg class="icon-complete">
+                              <use
+                                href="./images/icons.svg#icon-complete"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="order__item__thumb">
+                          <span class="order__item__title">Price per 1pcs</span
+                          ><span class="order__item-field">18,44 USD</span>
+                        </div>
+                        <div class="order__item__total">
+                          <span class="order__item__title">Price Total</span
+                          ><span class="order__item-field">202,84 USD</span>
+                        </div>
+
+                        <div class="order__item__icon">
+                          <span class="item__sequence-number">3.</span>
+                          <img
+                            class="devided__item__img"
+                            src="./images/orderItem.png"
+                            alt=""
+                          />
+                          <div class="order__item__number__thumb">
+                            <span class="order__item__title">Part Number</span
+                            ><span class="order__item__part-number"
+                              >1872667</span
+                            >
+                          </div>
+                        </div>
+                        <div class="order__item__thumb">
+                          <span class="order__item__title"
+                            >Chosen Quantity</span
+                          >
+                          <div class="chosen__quantity__input">
+                            <input
+                              class="devided__chosen__quantity"
+                              value="11"
+                              type="text"
+                            />
+                            <svg class="icon-complete">
+                              <use
+                                href="./images/icons.svg#icon-complete"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="order__item__thumb">
+                          <span class="order__item__title">Price per 1pcs</span
+                          ><span class="order__item-field">18,44 USD</span>
+                        </div>
+                        <div class="order__item__total">
+                          <span class="order__item__title">Price Total</span
+                          ><span class="order__item-field">202,84 USD</span>
+                        </div>
+
+                        <div class="order__item__total__thumb-modal">
+                          <div class="order__item__total-price">
+                            <span class="order__item__title">TOTAL PRICE</span
+                            ><span class="order__item-field">608,52 USD</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="packing__item__icon">
+                    <img
+                      class="packing__item__img"
+                      src="./images/orderItem.png"
+                      alt=""
+                    />
+                    <div class="order__item__number__thumb">
+                      <span class="modal__order__item__title">Part Number</span
+                      ><span class="modal__order__item-field">9559091</span>
+                    </div>
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Total Quantity</span>
+                    <input class="modal__chosen__quantity" value="10" type="text" />
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Description</span
+                    ><span class="modal__order__item-field"
+                      >Window handle, rotating screw, 10 mm x 40 mm, aluminum
+                      shell</span
+                    >
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Shipping Type</span
+                    ><span class="modal__order__item-field">Priority Mail</span>
+                  </div>
+                  <div class="modal__packing__item__total">
+                    <span class="modal__order__item__title">Price Total</span
+                    ><span class="modal__order__item-field">102 USD</span>
+                  </div>
+
+                  <div class="packing__item__icon">
+                    <img
+                      class="packing__item__img"
+                      src="./images/orderItem.png"
+                      alt=""
+                    />
+                    <div class="order__item__number__thumb">
+                      <span class="modal__order__item__title">Part Number</span
+                      ><span class="modal__order__item-field">1872667</span>
+                    </div>
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Total Quantity</span>
+                    <input class="modal__chosen__quantity" value="50" type="text" />
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Description</span
+                    ><span class="modal__order__item-field"
+                      >ASSEMBLY SCREW @ INTERLOCK POKET ADAPTOR</span
+                    >
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Shipping Type</span
+                    ><span class="modal__order__item-field">Priority Mail</span>
+                  </div>
+                  <div class="modal__packing__item__total">
+                    <span class="modal__order__item__title">Price Total</span
+                    ><span class="modal__order__item-field">28 USD</span>
+                  </div>
+
+                  <div class="packing__item__icon">
+                    <img
+                      class="packing__item__img"
+                      src="./images/orderItem.png"
+                      alt=""
+                    />
+                    <div class="order__item__number__thumb">
+                      <span class="modal__order__item__title">Part Number</span
+                      ><span class="modal__order__item-field">2377889</span>
+                    </div>
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Total Quantity</span>
+                    <input class="modal__chosen__quantity" value="20" type="text" />
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Description</span
+                    ><span class="modal__order__item-field"
+                      >Window handle, rotating screw, 6,5 mm x 20 mm, aluminum
+                      shell</span
+                    >
+                  </div>
+                  <div class="modal__packing__item__thumb">
+                    <span class="modal__order__item__title">Shipping Type</span
+                    ><span class="modal__order__item-field">Priority Mail</span>
+                  </div>
+                  <div class="modal__packing__item__total">
+                    <span class="modal__order__item__title">Price Total</span
+                    ><span class="modal__order__item-field">204 USD</span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__second-step" id="secondStepThumb">
+                <div class="packing__img-thumb">
+                <img class="packing__img" src="./images/packing.jpg" alt="packing sticker">
+              </div></div>
+                <div class="confirm__modal__buttons"><button class="back__btn" data-packing-close type="button">Go back</button>
+                  <button class="print__btn" type="button">Print stickers</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
@@ -457,5 +749,8 @@
     <script src="./js/pagination.js"></script>
     <script src="./js/details.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/packing.js"></script>
+    <script src="./js/steps-navigation.js"></script>
+    <script src="./js/checkbox.js"></script>
   </body>
 </html>

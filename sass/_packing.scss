@@ -13,9 +13,7 @@
   padding: 8px 16px;
   color: #a6a6a6;
   font-size: 14px;
-
   font-weight: 500;
-
   letter-spacing: 0.35px;
 }
 
@@ -25,11 +23,20 @@
 }
 
 .packing__checkbox {
-  fill: rgba(0, 0, 0, 0);
+  fill: transparent;
   stroke: #d6dae6;
   width: 24px;
   height: 24px;
   margin-right: 11px;
+}
+
+.packing__checkbox-checked {
+  background-image: url(../images/filled.svg);
+  background-size: contain;
+  stroke: transparent;
+
+  background-origin: content-box;
+  border-radius: 2px;
 }
 
 .packing__item__img {
@@ -89,6 +96,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 2;
   transform: translate(-50%, -50%);
   width: 480px;
   padding: 24px;
@@ -188,8 +196,7 @@
 }
 
 .icon__close {
-  fill: transparent;
-  stroke: #a1a5ba;
+  fill: #a1a5ba;
   width: 16px;
   height: 16px;
   cursor: pointer;
@@ -266,6 +273,11 @@
   cursor: pointer;
 }
 
+.confirm-packages:hover,
+.confirm-packages:focus {
+  opacity: 1;
+}
+
 .cancel-selection {
   border-radius: 10px;
   opacity: 0.6;
@@ -286,18 +298,28 @@
 .packing__buttons {
   display: flex;
   justify-content: flex-end;
+  padding-top: 20px;
 }
 
 .packing__table__section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 75vh;
+  height: 80vh;
   width: 100%;
   overflow: auto;
   padding: 0 20px 18px 20px;
   background-color: var(--white);
   box-shadow: 0px 3px 8px 0px rgba(76, 82, 114, 0.12);
+}
+
+.packing__table__section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.packing__table__section::-webkit-scrollbar-thumb {
+  background-color: #d6dae6;
+  border-radius: 10px;
 }
 
 .devided-packing__list {
@@ -348,7 +370,6 @@
   top: 50%;
   left: 80px;
   transform: translate(-50%, -50%);
-  z-index: 3;
 }
 
 .chosen__quantity__input {
@@ -366,4 +387,8 @@
   width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr 4fr 1fr 1fr;
+}
+
+.modal__first-step {
+  margin-top: 34px;
 }
