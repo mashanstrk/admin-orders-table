@@ -6,10 +6,16 @@ const firstStepNavTitle = document.querySelector("#firstStepBtn .confirm__modal_
 const secondStepNavTitle = document.querySelector("#secondStepBtn .confirm__modal__nav__title");
 const navCurrentClass = "confirm__modal__nav-current";
 const navTitleCurrentClass = "confirm__modal__nav__title-curent";
+const printBtn = document.getElementById("printBtn");
+const finishBtn = document.getElementById("finishBtn");
 
-function showElement(elementToShow, elementToHide, buttonToShow, buttonToHide) {
+
+function showElement(elementToShow, elementToHide, buttonToShow, buttonToHide, buttonShow, buttonHide) {
   elementToShow.style.display = "block";
   elementToHide.style.display = "none";
+
+  buttonShow.style.display = "block";
+  buttonHide.style.display = "none";
 
   buttonToShow.classList.add(navCurrentClass);
   buttonToHide.classList.remove(navCurrentClass);
@@ -19,9 +25,9 @@ function showElement(elementToShow, elementToHide, buttonToShow, buttonToHide) {
 }
 
 firstStepBtn.addEventListener("click", function() {
-  showElement(firstStepThumb, secondStepThumb, firstStepBtn, secondStepBtn);
+  showElement(firstStepThumb, secondStepThumb, firstStepBtn, secondStepBtn, printBtn, finishBtn);
 });
 
 secondStepBtn.addEventListener("click", function() {
-  showElement(secondStepThumb, firstStepThumb, secondStepBtn, firstStepBtn);
+  showElement(secondStepThumb, firstStepThumb, secondStepBtn, firstStepBtn, finishBtn, printBtn);
 });
