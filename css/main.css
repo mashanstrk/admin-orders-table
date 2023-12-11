@@ -194,7 +194,7 @@ img {
 .orders {
   padding: 57px 40px 40px 40px;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   width: 100%;
 }
 .orders__title {
@@ -294,6 +294,10 @@ img {
   background-color: var(--white);
   border: 3px solid var(--white);
   cursor: pointer;
+  color: #a1a5ba;
+  font-family: Futura;
+  font-size: 14px;
+  line-height: 20px;
 }
 @media (max-width: 1200px) {
   .orders__filter__search {
